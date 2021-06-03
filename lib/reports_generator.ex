@@ -9,5 +9,6 @@ defmodule ReportsGenerator do
     line
     |> String.trim()
     |> String.split(",")
+    |> List.update_at(2, &String.to_integer/1)
   end
 end
