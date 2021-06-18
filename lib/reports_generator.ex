@@ -21,7 +21,7 @@ defmodule ReportsGenerator do
   end
 
   def fetch_higher_cost(report, option) when option in @options do
-    {:ok, Enum.max_by(report[option], fn{_key, value} -> value end)}
+    {:ok, Enum.max_by(report[option], fn {_key, value} -> value end)}
   end
 
   def fetch_higher_cost(_report, _option), do: {:error, "Invalid Option!"}
