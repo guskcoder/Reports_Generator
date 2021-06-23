@@ -89,7 +89,7 @@ defmodule ReportsGeneratorRocketseatTest do
       response =
         file_name
         |> ReportsGenerator.build()
-        |> ReportsGenerator.fetch_higher_cost("banana")
+        |> ReportsGenerator.fetch_higher_cost("banaana")
 
       expected_response = {:error, "Invalid Option!"}
 
